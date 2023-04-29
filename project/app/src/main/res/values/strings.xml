@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Project_Ubi</string>
+    <string name="UserName">Name</string>
+    <string name="UserEmail">Email</string>
+    <string name="UserAge">Age</string>
+    <string name="logo">Logo</string>
+    <string name="UserHeight">Height</string>
+    <string name="UserWeight">Weight</string>
+    <string name="UserPassword">Password</string>
+    <string name="submit">Submit</string>
+    <string-array name="gender_options">
+        <item>Masculine</item>
+        <item>Feminine</item>
+        <item>Other</item>
+    </string-array>
+
 </resources>

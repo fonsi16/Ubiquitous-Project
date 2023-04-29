@@ -8,10 +8,37 @@ public class User {
     private String gender;
     private String email;
     private String password;
-    private Date dateOfBirth;
+    private int age;
     private float height;
     private float weight;
 
+    public User(int id, String name, String gender, String email, String password, int age, float height, float weight) {
+        this.id = id;
+        this.name = name;
+        this.gender = gender;
+        this.email = email;
+        this.password = password;
+        this.age = age;
+        this.height = height;
+        this.weight = weight;
+    }
+
+    public User() {
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", gender='" + gender + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", age=" + age +
+                ", height=" + height +
+                ", weight=" + weight +
+                '}';
+    }
 
     public int getId() {
         return id;
@@ -45,12 +72,12 @@ public class User {
         this.password = password;
     }
 
-    public Date getDateOfBirth() {
-        return dateOfBirth;
+    public int getAge() {
+        return age;
     }
 
-    public void setDateOfBirth(Date dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public float getHeight() {
@@ -76,4 +103,6 @@ public class User {
     public void setGender(String gender) {
         this.gender = gender;
     }
+
+
 }

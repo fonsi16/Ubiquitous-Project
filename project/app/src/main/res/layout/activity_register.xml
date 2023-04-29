@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/reg_name"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/UserName"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:autofillHints=""
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="89dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/reg_email"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/UserEmail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/reg_name"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/reg_name"
+        app:layout_constraintTop_toBottomOf="@+id/reg_weight"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/reg_age"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/UserAge"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/reg_name"
+        app:layout_constraintStart_toStartOf="@+id/reg_name"
+        app:layout_constraintTop_toBottomOf="@+id/reg_name"
+        android:autofillHints=""
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <Spinner
+        android:id="@+id/reg_gender"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:dropDownWidth="wrap_content"
+        android:entries="@array/gender_options"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="@+id/reg_age"
+        app:layout_constraintStart_toStartOf="@+id/reg_age"
+        app:layout_constraintTop_toBottomOf="@+id/reg_age" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/AppRed"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/reg_email"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/reg_email"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        tools:ignore="VisualLintButtonSize" />
+
+    <EditText
+        android:id="@+id/reg_height"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/UserHeight"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/reg_gender"
+        app:layout_constraintStart_toStartOf="@+id/reg_gender"
+        app:layout_constraintTop_toBottomOf="@+id/reg_gender"
+        android:autofillHints=""
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/reg_weight"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/UserWeight"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/reg_height"
+        app:layout_constraintStart_toStartOf="@+id/reg_height"
+        app:layout_constraintTop_toBottomOf="@+id/reg_height"
+        android:autofillHints=""
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/UserPassword"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/reg_email"
+        app:layout_constraintStart_toStartOf="@+id/reg_email"
+        app:layout_constraintTop_toBottomOf="@+id/reg_email"
+        android:autofillHints=""
+        tools:ignore="VisualLintTextFieldSize" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
